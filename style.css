@@ -11,6 +11,7 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
+
 }
 
 html{
@@ -102,10 +103,10 @@ header #toggler{
 header .tog{
     font-size: 3rem;
     color: #333;
-    border-radius: .5rem;
+    border-radius: 1.8rem;
     padding: .5rem 1.5rem;
     cursor: pointer;
-    border: 1rem solid rgba(0,0,0,.3);
+    border: .4rem solid rgba(0,0,0,.3);
     display: none;
 }
 
@@ -160,6 +161,16 @@ header .tog{
     .home .content span{
         font-size: 2.5rem;
     }
+
+    .icons-container .icons h3{
+        font-size: 2rem;
+    }
+
+    .icons-container .icons span{
+        font-size: 1.7rem;
+    }
+
+
 }
 @media (max-width: 450px) {
     html {
@@ -178,27 +189,33 @@ header .tog{
 }
 
 .home .content{
-    max-width: 50rem;  
+    max-width: 160rem;  
 
 }
 
 .home .content h3{
-    font-size: 6rem;
+    font-size: 7rem;
     color: #333;
 }
 
 .home .content span{
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: var(--pink);
     padding: 1rem 0;
     line-height: 1.5;
 }
 
 .home .content p{
-    font-size: 1.5rem;
+    width: 80rem;
+    font-size: 2rem;
     color: #999;
     padding: 1rem 0;
     line-height: 1.5;
+}
+
+.home .line-art{
+    padding-left: 30rem;
+    margin-right: 0;
 }
 
 .about .row{
@@ -252,3 +269,39 @@ header .tog{
     padding-top: 1rem;
     line-height: 1.5;
 }
+
+.icons-container{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-container .icons{
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: 1.8rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.icons-container .icons h3{
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}  
+
